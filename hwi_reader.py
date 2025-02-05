@@ -1,7 +1,6 @@
 import sys
 import zipfile
-from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
-                               QFileDialog, QLabel, QGridLayout, QScrollArea)
+from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QFileDialog, QLabel, QGridLayout, QScrollArea)
 from PySide6.QtGui import QPixmap, QImage
 from PySide6.QtCore import Qt
 import fitz  # rendering pdf
@@ -9,7 +8,7 @@ import fitz  # rendering pdf
 class AcrobatReader(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Acrobat Reader - HWI Viewer")
+        self.setWindowTitle("HWI Viewer")
         self.setGeometry(100, 100, 1200, 800)
         self.current_page = 0
         self.doc = None
